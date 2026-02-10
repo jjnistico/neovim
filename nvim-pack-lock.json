@@ -9,6 +9,15 @@
       "src": "https://github.com/Saghen/blink.cmp",
       "version": ">=0.0.0"
     },
+    "neo-tree.nvim": {
+      "rev": "f3df514fff2bdd4318127c40470984137f87b62e",
+      "src": "https://github.com/nvim-neo-tree/neo-tree.nvim",
+      "version": "3.0.0 - 4.0.0"
+    },
+    "nui.nvim": {
+      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
+    },
     "nvim-lspconfig": {
       "rev": "66fd02ad1c7ea31616d3ca678fa04e6d0b360824",
       "src": "https://github.com/neovim/nvim-lspconfig"

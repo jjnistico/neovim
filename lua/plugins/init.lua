@@ -1,4 +1,6 @@
 require("plugins.blink")
 require("plugins.lspconfig")
 require("plugins.neosolarized")
+require("plugins.neotree")
+require("plugins.shared")
 require("plugins.telescope")
