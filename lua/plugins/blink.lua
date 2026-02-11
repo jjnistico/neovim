@@ -11,18 +11,25 @@ vim.api.nvim_create_autocmd("InsertEnter", {
 	once = true,
 	callback = function()
 		require("blink.cmp").setup({
-			keymap = { preset = "super-tab" },
 			appearance = {
 				nerd_font_variant = "mono",
 				use_nvim_cmp_as_default = true,
 			},
-			completion = {
-				documentation = { auto_show = false },
+			fuzzy = { implementation = "prefer_rust_with_warning" },
+			keymap = {
+				preset = "enter",
+				["<Tab>"] = {
+					function(cmp)
+						return cmp.select_next()
+					end
+				},
+			},
+			signature = {
+				enabled = true,
 			},
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer" },
 			},
-			fuzzy = { implementation = "prefer_rust_with_warning" },
 		})
 	end,
 })
