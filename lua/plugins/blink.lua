@@ -18,11 +18,7 @@ vim.api.nvim_create_autocmd("InsertEnter", {
 			fuzzy = { implementation = "prefer_rust_with_warning" },
 			keymap = {
 				preset = "enter",
-				["<Tab>"] = {
-					function(cmp)
-						return cmp.select_next()
-					end
-				},
+				["<Tab>"] = { 'select_next', 'fallback' },
 			},
 			signature = {
 				enabled = true,
